@@ -17,12 +17,10 @@
     "cryptocurrencies",
     "blockchain"
   ],
-  "author": "depay.com",
+  "author": "unuspay.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DePayFi/web3-payments/issues"
-  },
-  "homepage": "https://depay.com",
+ 
+  "homepage": "https://unuspay.com",
   "private": false,
   "dependencies": {},
   "peerDependencies": {
