@@ -20,7 +20,6 @@ import Token from '@depay/web3-tokens'
 
 import Blockchains from '@depay/web3-blockchains'
 import routers from './routers'
-import throttle from 'lodash/throttle'
 import { ethers } from 'ethers'
 import { getBlockchainCost } from './costs'
 import { getTransaction } from './transaction'
