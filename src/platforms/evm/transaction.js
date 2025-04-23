@@ -228,7 +228,7 @@ const transactionParams = async ({ paymentRoute, options, deadline }) => {
             toTokenAddress: paymentRoute.toToken.address,
             exchangeAddress: exchangeAddress,
             amount: paymentRoute.fromAmount,
-            exchangeCallData: exchangeCallData,
+            exchangeData: exchangeCallData,
 
         }
         let paramToTokens = []
