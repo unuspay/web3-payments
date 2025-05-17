@@ -74,7 +74,7 @@ const getTransaction = async ({ paymentRoute, options }) => {
 }
 
 const transactionAddress = ({ paymentRoute, options }) => {
-    if (paymentRoute.directTransfer && paymentRoute.feeAmount === "0" && options?.wallet?.name !== 'World App') {
+    if (paymentRoute.directTransfer &&(paymentRoute.fee == undefined||paymentRoute.feeAmount === "0") && options?.wallet?.name !== 'World App') {
         if (paymentRoute.toToken.address == Blockchains[paymentRoute.blockchain].currency.address) {
             return paymentRoute.toAddress
         } else {
@@ -86,7 +86,7 @@ const transactionAddress = ({ paymentRoute, options }) => {
 }
 
 const transactionApi = ({ paymentRoute, options }) => {
-    if (paymentRoute.directTransfer && paymentRoute.feeAmount === "0" && options?.wallet?.name !== 'World App') {
+    if (paymentRoute.directTransfer && (paymentRoute.fee == undefined||paymentRoute.feeAmount === "0") && options?.wallet?.name !== 'World App') {
         if (paymentRoute.toToken.address == Blockchains[paymentRoute.blockchain].currency.address) {
             return undefined
         } else {
@@ -98,7 +98,7 @@ const transactionApi = ({ paymentRoute, options }) => {
 }
 
 const transactionMethod = ({ paymentRoute, options }) => {
-    if (paymentRoute.directTransfer && paymentRoute.feeAmount === "0" && options?.wallet?.name !== 'World App') {
+    if (paymentRoute.directTransfer && (paymentRoute.fee == undefined||paymentRoute.feeAmount === "0") && options?.wallet?.name !== 'World App') {
         if (paymentRoute.toToken.address == Blockchains[paymentRoute.blockchain].currency.address) {
             return undefined
         } else { // standard token transfer
@@ -193,7 +193,7 @@ const getPermit2SignatureTransferNonce = async ({ address, blockchain }) => {
 }
 
 const transactionParams = async ({ paymentRoute, options, deadline }) => {
-    if (paymentRoute.directTransfer && paymentRoute.feeAmount === "0" && options?.wallet?.name !== 'World App') {
+    if (paymentRoute.directTransfer && (paymentRoute.fee == undefined||paymentRoute.feeAmount === "0") && options?.wallet?.name !== 'World App') {
         if (paymentRoute.toToken.address == Blockchains[paymentRoute.blockchain].currency.address) {
             return undefined
         } else { // standard token transfer
