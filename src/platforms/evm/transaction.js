@@ -44,9 +44,7 @@ const EXCHANGE_PROXIES = {
     'polygon': {
         [Blockchains.polygon.wrapped.address]: '0xaE59C9d3E055BdFAa583E169aA5Ebe395689476a'
     },
-    'worldchain': {
-        [Blockchains.worldchain.wrapped.address]: '0x2CA727BC33915823e3D05fe043d310B8c5b2dC5b'
-    },
+    
     'solana': {}
 }
 
