@@ -3,12 +3,12 @@ const API = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{
 export default {
 
   ethereum: {
-    address: '0x6466F27B169C908Ba8174d80aEfa7173CbC3D0c7',
+    address: '0x33aa3250bc09c672fb507fe2c6a04118cb9b6a1a',
     api: API
   },
 
   bsc: {
-    address: '0x7ea09401db4692a8AEF4111b75bD32AE758f552A',
+    address: '0xf0895F85e3Be501a4dB382F219DE018dC941C56F',
     api: API
   },
 
@@ -23,7 +23,7 @@ export default {
   },
 
   avalanche: {
-    address: '0xFee05C41195985909DDfc9127Db1f94559c46db3',
+    address: '0x966d2C669Ec73234a57fFbBECbb783ECA9847c35',
     api: API
   },
 
@@ -33,12 +33,12 @@ export default {
   },
 
   arbitrum: {
-    address: '0xA1cfbeeF344A52e18f748fd6a126f9426A40fbc7',
+    address: '0xf0895F85e3Be501a4dB382F219DE018dC941C56F',
     api: API
   },
 
   optimism: {
-    address: '0x8698E529E9867eEbcC68b4792daC627cd8870736',
+    address: '0x051ffefd9160d941af6a87be10cad12cc4b0b5f8',
     api: API
   },
 
